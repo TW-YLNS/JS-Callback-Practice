@@ -1,6 +1,9 @@
-function newImage(url){
-    let image = document.createElement('img')
-    image.src = url
-    document.body.append(image)
-    return image
+function newImage(src, left, bottom) {
+    let img = document.createElement('img');
+    img.src = src;
+    img.style.position = 'fixed';
+    img.style.left = left;
+    img.style.bottom = bottom;
+    document.body.append(img);
+    return img;
 }
